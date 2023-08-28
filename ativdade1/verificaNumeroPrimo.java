@@ -3,7 +3,7 @@ public class verificaNumeroPrimo{
 
 
 public static void main(String[ ]args){
-Scanner numero = new Scanner(System.in);
+Scanner numero= new Scanner(System.in);
 int n;
  System.out.println("Digite o Numero");
 n = numero.nextInt();
