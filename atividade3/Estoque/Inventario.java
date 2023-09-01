@@ -10,8 +10,19 @@ class Inventario {
     }
 
     public void add(String nome, int qtd) {
-        Item newItem = new Item(nome, qtd);
+       Item ad =null;
+       for(Item item :itens){
+        if(item.nome().equals(nome)){
+            ad = item;
+            break;
+        }
+       }
+       if(ad != null){
+        System.out.println("Item já cadastrado");
+       }else{
+        Item newItem = new Item(nome,qtd);
         itens.add(newItem);
+       }
     }
 
     public void rem(String nome) {
